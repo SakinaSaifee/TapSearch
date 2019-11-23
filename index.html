@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>LAWINFO</title>
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-size: cover;
+	background-color: #fff;
+}
+#appname {
+	position: absolute;
+	margin-left: 550px;
+	margin-top: 90px;
+	font-size: 70px;
+	color: black;
+	font-family: monospace;
+	font-style: italic;
+}
+
+#login {
+	position: absolute;
+	width: 100px;
+	border-size: 5px;
+	background-color: grey;
+	margin-top: 30px;
+	margin-left: 1150px;
+	padding: 10px;
+	border-radius: 25px;
+	text-decoration: none;
+}
+
+#login:hover {
+	background-color: red;
+}
+
+.box h1 {
+	font-weight: 300px;
+	transform: uppercase;
+}
+
+.box {
+	width: 1000px;
+	padding-right: 200px;
+	padding-left: 200px;
+	position: absolute;
+	border-radius: 25px;
+	margin-top: 200px;
+	margin-left: 10px;
+	background: transparent;
+	text-align: center;
+}
+
+.box input[type="text"] {
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	padding: 14px 20px;
+	width: 50%;
+}
+
+.box input[type="submit"] {
+	background: green;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid green;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+}
+
+.box input[type="submit"]:hover {
+	background-color: blue;
+}
+
+div {
+	position: absolute;
+	margin-top: 200px;
+	margin-left: 330px;
+	color: blue;
+}
+
+.policy {
+	font-size: 20px;
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+	<h2 id="appname">LAWINFO</h2>
+	<a href="Admin.jsp" id="login"><font color="white"><b>Admin-Login</b></font></a>
+	<form class="box" action="SearchModule" method="post">
+
+		<input type="text" name="law" placeholder="Search Laws" required>
+		<input type="submit" value="Search">
+		<div>
+			<a class="policy" href="#">Terms and Condition</a> | <a
+				class="policy" href="#">Privacy Policy</a>
+		</div>
+	</form>
+</body>
+</html>
